@@ -1,0 +1,16 @@
+[package]
+name = "fisrt"
+version = "1.0.0"
+authors = []
+
+[addresses]
+harsh_adr = "97c24ab7096c9e8f7d63ec060ed5b92d944b610afe9881e9f7a6af2f9b3000b5"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
