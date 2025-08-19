@@ -11,10 +11,10 @@ module harsh_adr::sample2{
 
     // #[test_only]
 
-    #[test]
-    fun test_function(){
-        let result = confirm(1);
-        print(&result);
+    // #[test]
+    // fun test_function(){
+    //     let result = confirm(1);
+    //     print(&result)
 
-    }
+    // }
 }
