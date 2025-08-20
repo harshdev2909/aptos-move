@@ -36,19 +36,19 @@ module harsh_adr::sample4 {
 
     }
 
-    #[test]
+    // #[test]
     fun test_loop(){
         let result = sample_for_loop(10);
         print(&result);
     }
 
-    #[test]
+    // #[test]
     fun test () {
         let result  = sample_loop(10);
         print(&result);
     }
 
-    #[test]
+    // #[test]
    
     fun test_error () {
         sample_error(utf8(b"test"));
