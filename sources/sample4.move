@@ -1,5 +1,5 @@
 module harsh_adr::sample4 {
-    
+    use std::string::{String , utf8};
 
     #[test_only]
     use std::debug::print;
@@ -25,6 +25,17 @@ module harsh_adr::sample4 {
         value
     }
 
+    fun sample_error ( word :String){
+        if(word == utf8(b"test"))
+            print(&utf8(b"bete"))
+        else 
+            abort 123;   
+
+        assert!(word == utf8(b"test"),123);
+        print(&utf8(b"correct"));     
+
+    }
+
     #[test]
     fun test_loop(){
         let result = sample_for_loop(10);
@@ -35,5 +46,12 @@ module harsh_adr::sample4 {
     fun test () {
         let result  = sample_loop(10);
         print(&result);
+    }
+
+    #[test]
+   
+    fun test_error () {
+        sample_error(utf8(b"test"));
+        
     }
 }
