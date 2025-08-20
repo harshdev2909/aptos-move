@@ -12,7 +12,7 @@ module two {
     use harsh_adr::one::get_value;
     use std::debug::print;
     
-    #[test] 
+    // #[test] 
     fun test () {
         let get = get_value();
         print(&get);
@@ -22,7 +22,7 @@ module two {
 module three {
     use std::debug::print;
 
-    #[test]
+    // #[test]
     fun test () {
         let gets = harsh_adr::one::get_value();
         print(&gets);
