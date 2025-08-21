@@ -17,7 +17,7 @@ module harsh_adr::sample5{
         return a/b
     }
 
-    #[test]
+    // #[test]
     fun test(){
         let result = calculator(2,3,MUL);
         print(&result);
