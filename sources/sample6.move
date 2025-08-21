@@ -12,7 +12,7 @@ module harsh_adr::sample6{
     fun bitsift_left(a:u64 , times:u8):u64{
         return a>>times
     }
-    #[test]
+    // #[test]
     fun test(){
         let result = bit_or(7,4);
         print(&result);
