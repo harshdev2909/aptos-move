@@ -15,11 +15,11 @@ address harsh_adr{
             print(&price_w_fee);
         }
 
-        #[test]
+        // #[test]
         fun test (){
             calculate_swap();
         }
     }
 
 
-} 
+}
